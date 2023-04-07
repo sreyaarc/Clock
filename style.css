@@ -1,0 +1,44 @@
+body {
+    background: linear-gradient(90deg, #3F2B96, #A8C0FF);
+}
+#clockContainer {
+    position: relative; 
+    /* all the hands will get adjusted relative to this clock */
+    height: 25vw;
+    width: 25vw;  /* vw => 25 percent of the total width of the screen(it makes things responsive) */
+    background: url(../image/clock.png) no-repeat;
+    border: 1px solid grey;
+    border-radius: 50%;
+    background-size: 100%;
+    margin: auto;
+}
+#hour, #min, #sec {
+    position: absolute;
+    background: black;
+    border-radius: 10px;
+    transform-origin: bottom;  /* starts rotation(transformation) from the bottom */
+}
+#hour {
+    top: 31%;
+    left: 49.1%;
+    width: 2%;
+    height: 19%;
+    /* display: none; */
+}
+#min {
+    top: 25%;
+    left: 49.5%;
+    width: 1%;
+    height: 25%;
+    /* display: none; */
+}
+#sec {
+    top: 20.3%;
+    left: 49.7%;
+    width: 0.5%;
+    height: 30%;
+    background-color: lightcoral;
+    /* display: none; */
+}
+
+  
