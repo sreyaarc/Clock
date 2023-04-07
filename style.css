@@ -2,10 +2,9 @@ body {
     background: linear-gradient(90deg, #3F2B96, #A8C0FF);
 }
 #clockContainer {
-    position: relative; 
-    /* all the hands will get adjusted relative to this clock */
+    position: relative;
     height: 25vw;
-    width: 25vw;  /* vw => 25 percent of the total width of the screen(it makes things responsive) */
+    width: 25vw;
     background: url(../image/clock.png) no-repeat;
     border: 1px solid grey;
     border-radius: 50%;
@@ -16,7 +15,7 @@ body {
     position: absolute;
     background: black;
     border-radius: 10px;
-    transform-origin: bottom;  /* starts rotation(transformation) from the bottom */
+    transform-origin: bottom;  
 }
 #hour {
     top: 31%;
